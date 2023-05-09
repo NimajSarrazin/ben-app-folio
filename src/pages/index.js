@@ -2,12 +2,20 @@ import Hero from "@/layout/Hero";
 import Layout from "@/layout/Layout";
 import { createClient } from "contentful";
 import About from "./about";
+import SectionServices from "@/components/SectionServices";
+import SectionResume from "@/components/SectionResume";
 
 export default function Home() {
-  return <Layout>
-      <Hero/>
-      <About/>
-  </Layout>;
+  return (
+    <Layout>
+      <div className="">
+        <Hero />
+        <About />
+        <SectionServices />
+        <SectionResume />
+      </div>
+    </Layout>
+  );
 }
 
 export async function getStaticProps() {

@@ -88,27 +88,27 @@ export default function Navbar() {
                   Home
                 </li>
               </Link>
-              <Link href="/about" onClick={handleLinkClick}>
+              <Link href="#about" onClick={handleLinkClick}>
                 <li className="hover:bg-orange-300 hover:shadow-xl  rounded-md text-sm font-medium">
                   About
                 </li>
               </Link>
-              <Link href="/contact" onClick={handleLinkClick}>
+              <Link href="#contact" onClick={handleLinkClick}>
                 <li className="hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
                   Projet
                 </li>
               </Link>
-              <Link href="/service">
+              <Link href="#service">
                 <li className="hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
                   Service
                 </li>
               </Link>
-              <Link href="/resume">
+              <Link href="#resume">
                 <li className="hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
                   Resume
                 </li>
               </Link>
-              <Link href="/projet">
+              <Link href="#projet">
                 <li className="hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
                   Contact
                 </li>
@@ -127,27 +127,27 @@ export default function Navbar() {
             Home
           </li>
         </Link>
-        <Link href="/about">
+        <Link href="#about">
           <li className="px-3 py-2 hover:bg-orange-300 hover:shadow-xl  rounded-md text-sm font-medium">
             About
           </li>
         </Link>
-        <Link href="/service">
+        <Link href="#service">
           <li className="px-3 py-2 hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
             Service
           </li>
         </Link>
-        <Link href="/resume">
+        <Link href="#resume">
           <li className="px-3 py-2 hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
             Resume
           </li>
         </Link>
-        <Link href="/projet">
+        <Link href="#projet">
           <li className="px-3 py-2 hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
             Projet
           </li>
         </Link>
-        <Link href="/contact">
+        <Link href="#contact">
           <li className="px-3 py-2 hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
             Contact
           </li>

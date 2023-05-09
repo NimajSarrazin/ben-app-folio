@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
-
+.font-berkshire {
+  font-family: 'Berkshire Swash', cursive;
+}
 
 
 *{
@@ -18,4 +20,3 @@
   margin-left: auto;
 
 }
-
