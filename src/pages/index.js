@@ -4,6 +4,7 @@ import { createClient } from "contentful";
 import About from "./about";
 import SectionServices from "@/components/SectionServices";
 import SectionResume from "@/components/SectionResume";
+import SectionProjet from "@/components/SectionProjet";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <About />
         <SectionServices />
         <SectionResume />
+        <SectionProjet />
       </div>
     </Layout>
   );
