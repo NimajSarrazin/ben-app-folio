@@ -6,7 +6,9 @@ import SectionServices from "@/components/SectionServices";
 import SectionResume from "@/components/SectionResume";
 import SectionProjet from "@/components/SectionProjet";
 
-export default function Home() {
+
+export default function Home({ posts }) {
+  console.log(posts);
   return (
     <Layout>
       <div className="">
@@ -14,7 +16,7 @@ export default function Home() {
         <About />
         <SectionServices />
         <SectionResume />
-        <SectionProjet />
+        <SectionProjet posts={posts}/>
       </div>
     </Layout>
   );
@@ -27,7 +29,7 @@ export async function getStaticProps() {
     accessToken: process.env.NEXT_PUBLIC_CONTENT_ACCESS_TOKEN,
   });
   const data = await client.getEntries({
-    content_type: "benFolio",
+    content_type: "blogNextjs",
     order: "sys.createdAt",
     limit: 9,
   });
