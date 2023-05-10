@@ -14,7 +14,7 @@ export default function Menu() {
   const handleProjectClick = (projectId) => {
     setSelectedProjectId(projectId);
   };
-  const style= 'white'
+  const style = "white";
 
   return (
     <div className="">
@@ -25,9 +25,7 @@ export default function Menu() {
               <span
                 onClick={() => handleProjectClick(project.id)}
                 className={`bg-${
-                  selectedProjectId === project.id
-                    ? "red"
-                    : project.color
+                  selectedProjectId === project.id ? "red" : project.color
                 } text-${
                   selectedProjectId === project.id ? style : project.textColor
                 } border-[#333] border p-2 px-5 cursor-pointer`}

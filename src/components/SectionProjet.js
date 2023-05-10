@@ -15,9 +15,16 @@ export default function SectionProjet({ posts }) {
       </div>
       <div className="container">
         <Menu />
-        <div className="py-10 grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="py-10 grid md:gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {posts.map((post) => (
-            <div key={post.sys.id} className={post.fields.slug === "Mode" ? "md:hidden xl:hidden lg:block" : ""}>
+            <div
+              key={post.sys.id}
+              className={
+                post.fields.slug === "Mode"
+                  ? "md:hidden xl:hidden lg:block"
+                  : ""
+              }
+            >
               <Projet
                 key={post.sys.id}
                 slug={post.fields.slug}

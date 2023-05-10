@@ -93,7 +93,7 @@ export default function Navbar() {
                   About
                 </li>
               </Link>
-              <Link href="#contact" onClick={handleLinkClick}>
+              <Link href="#projet" onClick={handleLinkClick}>
                 <li className="hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
                   Projet
                 </li>
@@ -108,7 +108,7 @@ export default function Navbar() {
                   Resume
                 </li>
               </Link>
-              <Link href="#projet">
+              <Link href="#contact">
                 <li className="hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
                   Contact
                 </li>

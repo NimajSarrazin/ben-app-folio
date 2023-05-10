@@ -1,6 +1,8 @@
-import { createClient } from 'contentful';
-import React from 'react'
-
+import Layout from "@/layout/Layout";
+import { createClient } from "contentful";
+import React from "react";
+import CardAsidePost from "@/components/cards/CardAsidePost";
+import CardPost from "@/components/cards/CardPost";
 
 // Connect to contentful
 const client = createClient({
@@ -47,13 +49,18 @@ export async function getStaticProps({ params }) {
   };
 }
 
-
-
-
-export default function Index({post}) {
+export default function Index({ post }) {
+  const { title, featureImage, content, createdAt } = post.fields;
   return (
-    <div>
-        
-    </div>
-  )
+    <Layout>
+      <div className="container md:py-40 sm:py-6 p-4 block lg:flex lg:space-x-6">
+        <CardPost
+          title={title}
+          content={content}
+          url_img={featureImage.fields.file.url}
+        />
+        <CardAsidePost />
+      </div>
+    </Layout>
+  );
 }
