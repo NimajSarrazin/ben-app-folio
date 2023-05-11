@@ -7,8 +7,8 @@ import SectionResume from "@/components/SectionResume";
 import SectionProjet from "@/components/SectionProjet";
 
 
-export default function Home({ posts }) {
-  console.log(posts);
+export default function Home({ posts, dataNextjs }) {
+  console.log(dataNextjs);
   return (
     <Layout>
       <div className="">
@@ -33,11 +33,18 @@ export async function getStaticProps() {
     order: "sys.createdAt",
     limit: 9,
   });
+    const dataNextjs = await client.getEntries({
+      content_type: "blogNextjs",
+      order: "sys.createdAt",
+      limit: 3,
+      "metadata.tags.sys.id[all]":'nextjs'
+    });
   // On envoie la data dans le props de la page
 
   return {
     props: {
       posts: data.items,
+      dataNextjs: dataNextjs.items,
     },
   };
 }

@@ -26,7 +26,7 @@ export default function Hero() {
       <div className="container">
         <div className="flex flex-wrap items-center mr-0 ml-0 h-[550px] md:h-[600px] xl:h-[800px]  ">
           <div className="relative z-10 pr-0 pl-0 w-full sm:w-1/2 md:w-2/3 xl:w-4/5">
-            <h2 className="text-sm sm:text-lg text-white md:text-md  mb-0 xl:my-4">
+            <h2 className="text-sm sm:text-lg text-white md:text-md lg:text-4xl  mb-0 xl:my-4">
               Hi There! <br />
               I'm Benjamin Sarrazin
             </h2>
@@ -38,6 +38,7 @@ export default function Hero() {
               industy. Lorem ipsum has been the industrys standar dummy text
               ever
             </p>
+
             <Link href="https://drive.google.com/uc?export=download&id=1cNbyPZ46zhctKFI5prFgutdswgubinxt">
               <BtnPrimary />
             </Link>

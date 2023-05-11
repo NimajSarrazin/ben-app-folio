@@ -4,17 +4,19 @@ import { BiStar } from "react-icons/bi";
 
 export default function CardSkills() {
   const skills = [
-    { name: "HTML 5", stars: 5 },
-    { name: "PHP", stars: 3 },
-    { name: "Symfony", stars: 3 },
-    { name: "React", stars: 3 },
-    { name: "Next.js", stars: 3 },
-    { name: "JavaScript", stars: 2 },
+    {id:1, name: "HTML 5", stars: 5 },
+    {id:2, name: "PHP", stars: 3 },
+    { id:3,name: "Symfony", stars: 3 },
+    {id:4, name: "React", stars: 3 },
+    {id:5, name: "Next.js", stars: 3 },
+    {id:6, name: "JavaScript", stars: 2 },
   ];
 
-  const renderStars = (count) => {
-    return Array(count).fill(<BiStar />);
-  };
+ const renderStars = (count) => {
+   return Array(count)
+     .fill(null)
+     .map((_, index) => <BiStar key={index} />);
+ };
 
   return (
     <section className="">
@@ -47,8 +49,8 @@ export default function CardSkills() {
           </aside>
           <div className="text-white">
             <ul>
-              {skills.slice(3).map((skill, index) => (
-                <li key={index} className="uppercase mb-4 tracking-wider">
+              {skills.slice(3).map((skill) => (
+                <li key={skill.id} className="uppercase mb-4 tracking-wider">
                   {skill.name}
                   <div className="flex text-xl text-[#ff5d56]">
                     {renderStars(skill.stars)}

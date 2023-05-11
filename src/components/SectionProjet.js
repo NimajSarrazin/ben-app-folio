@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import TitleSection from "./TitleSection";
 import Projet from "./cards/projet/Projet";
 import Menu from "./cards/projet/Menu";
 
 export default function SectionProjet({ posts }) {
   console.log(posts);
+
   return (
     <section className="bg-[#151515]  " id="projet">
       <div className="">
@@ -32,6 +33,7 @@ export default function SectionProjet({ posts }) {
                 createdAT={post.fields.createdAt}
               />
             </div>
+            
           ))}
         </div>
       </div>
