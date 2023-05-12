@@ -54,7 +54,7 @@ export default function Form() {
       });
   };
   return (
-    <section className="container" id="#contact">
+    <section className="container">
       <div className="mb-24">
         {formSuccess ? (
           <div>{formSuccessMessage}</div>
