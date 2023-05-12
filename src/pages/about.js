@@ -1,6 +1,10 @@
 import TitleSection from "@/components/TitleSection";
 import CardAbout from "@/components/cards/CardAbout";
 import React from "react";
+import { motion } from "framer-motion";
+
+
+
 
 export default function About() {
   return (
@@ -10,13 +14,21 @@ export default function About() {
           title="About Me"
           description="Professional Profile - There is All About Me"
         />
-        <div className="relative grid grid-cols-1 gap-10 lg:grid-cols-2">
-          <img
+        <div className="relative grid grid-cols-1 gap-10 md:flex lg:flex">
+          <motion.img
             src="/img/about.jpg"
             alt=""
-            className="w-full"
+            initial={{ opacity: 0, x: -600 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.8 }}
+            className="w-full md:w-1/2 lg:w-1/3 xl:1/2"
           />
-          <div className="mt-10 relative">
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{ opacity: 1, y: 0}}
+            transition={{ duration: 1.5 }}
+            className="mt-10 relative"
+          >
             <h3 className="relative mb-8 pb-5 text-xl text-white md:text-3xl lg:text-5xl ">
               I'm Benjamin Sarrazin
               <span className="w-10 h-1 bg-[#ff5d56] absolute left-0 bottom-0"></span>
@@ -25,15 +37,15 @@ export default function About() {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus assumenda, voluptas nostrum quasi eaque modi
               voluptatibus sed enim rem? Itaque veritatis eligendi, magnam
-              doloremque vitae temporibus quae error odit.<br/> 
-              Lorem ipsum dolor sit
-              amet, consectetur adipisicing elit. Doloribus assumenda, voluptas
-              nostrum quasi eaque modi voluptatibus sed enim rem? Itaque
-              veritatis eligendi, magnam doloremque vitae temporibus quae error
-              odit.
+              doloremque vitae temporibus quae error odit.
+              <br />
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus assumenda, voluptas nostrum quasi eaque modi
+              voluptatibus sed enim rem? Itaque veritatis eligendi, magnam
+              doloremque vitae temporibus quae error odit.
             </p>
             <CardAbout />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

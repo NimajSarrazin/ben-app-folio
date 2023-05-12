@@ -1,11 +1,16 @@
 import React from "react";
 import { BiSearch } from "react-icons/bi";
 import CardCategories from "./CardCategories";
-
+import { motion } from "framer-motion";
 export default function CardAsidePost() {
   return (
-    <aside className="w-full lg:w-2/5 pt-8 lg:pt-1 ">
-      <form action="">
+    <motion.aside
+      initial={{ opacity: 0, y: 400 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.8 }}
+      className="w-full lg:w-2/5 xl:w-full pt-8 lg:pt-1 "
+    >
+      <form>
         <div className="flex items-center relative pb-10">
           <input
             type="text"
@@ -21,6 +26,6 @@ export default function CardAsidePost() {
         <h2 className="text-black text-xl font-black">Categories</h2>
         <CardCategories />
       </div>
-    </aside>
+    </motion.aside>
   );
 }

@@ -5,10 +5,12 @@ import About from "./about";
 import SectionServices from "@/components/SectionServices";
 import SectionResume from "@/components/SectionResume";
 import SectionProjet from "@/components/SectionProjet";
+import { useState } from "react";
+import Newsletter from "@/components/Newsletter";
+import SectionContact from "@/components/SectionContact";
 
 
 export default function Home({ posts, dataNextjs }) {
-  console.log(dataNextjs);
   return (
     <Layout>
       <div className="">
@@ -17,6 +19,8 @@ export default function Home({ posts, dataNextjs }) {
         <SectionServices />
         <SectionResume />
         <SectionProjet posts={posts}/>
+        <Newsletter/>
+        <SectionContact />
       </div>
     </Layout>
   );
@@ -36,8 +40,8 @@ export async function getStaticProps() {
     const dataNextjs = await client.getEntries({
       content_type: "blogNextjs",
       order: "sys.createdAt",
-      limit: 3,
-      "metadata.tags.sys.id[all]":'nextjs'
+      limit: 1,
+      "metadata.tags.sys.id[all]":'nextjs, symfony'
     });
   // On envoie la data dans le props de la page
 

@@ -1,10 +1,11 @@
 
-import { dataComments } from "@/data/DataComments";
+
+import { dataComments } from "@/data/dataComments";
 import { Avatar } from "@nextui-org/react";
 
 export default function CardComment() {
   return (
-    <div className="container antialiased mx-auto max-w-screen-sm">
+    <div className="antialiased mx-auto max-w-screen-sm">
       <h3 className="mb-4 text-lg font-semibold text-gray-900">4 Comments</h3>
       <div className="space-y-4">
         {dataComments.map((comment, index) => (

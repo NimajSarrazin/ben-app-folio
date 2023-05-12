@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import Modal from "./Modal";
-import ModalCard from "./Modal";
-import { Button } from "@nextui-org/react";
 import Link from "next/link";
 
 export default function Projet({
@@ -20,11 +17,9 @@ export default function Projet({
             <img
               src={img}
               alt={title}
-              className="object-cover w-full h-40 sm:h-56 md:h-64 lg:h-80 xl:h-96 cursor-pointer"
+              className="object-cover w-full h-40 sm:h-56 md:h-64  cursor-pointer"
             />
-            <div className="absolute bottom-0 left-3 group-hover:block">
-              {/* Contenu supplémentaire à afficher au survol */}
-            </div>
+            <div className="absolute bottom-0 left-3 group-hover:block"></div>
           </div>
           <div className="hover:text-gray-600">
             <p className="mt-2 font-bold text-lg ">{title}</p>
@@ -32,7 +27,6 @@ export default function Projet({
               {extract} {createdAT}
             </p>
           </div>
-          <div></div>
         </div>
       </div>
     </Link>

@@ -84,32 +84,32 @@ export default function Navbar() {
           <div className="hidden md:block">
             <div className="ml-10 flex gap-5">
               <Link href="/" onClick={handleLinkClick}>
-                <li className="hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
+                <li className="hover:border-b-red-900 hover:border-b-4 hover:shadow-xl rounded-md text-sm font-medium">
                   Home
                 </li>
               </Link>
               <Link href="#about" onClick={handleLinkClick}>
-                <li className="hover:bg-orange-300 hover:shadow-xl  rounded-md text-sm font-medium">
+                <li className="hover:border-b-red-900 hover:border-b-4  hover:shadow-xl  rounded-md text-sm font-medium">
                   About
                 </li>
               </Link>
               <Link href="#projet" onClick={handleLinkClick}>
-                <li className="hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
+                <li className="hover:border-b-red-900 hover:border-b-4  hover:shadow-xl rounded-md text-sm font-medium">
                   Projet
                 </li>
               </Link>
               <Link href="#service">
-                <li className="hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
+                <li className="hover:border-b-red-900 hover:border-b-4 hover:shadow-xl rounded-md text-sm font-medium">
                   Service
                 </li>
               </Link>
               <Link href="#resume">
-                <li className="hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
+                <li className="hover:border-b-red-900 hover:border-b-4 hover:shadow-xl rounded-md text-sm font-medium">
                   Resume
                 </li>
               </Link>
               <Link href="#contact">
-                <li className="hover:bg-orange-300 hover:shadow-xl rounded-md text-sm font-medium">
+                <li className="hover:border-b-red-900 hover:border-b-4 hover:shadow-xl rounded-md text-sm font-medium">
                   Contact
                 </li>
               </Link>
