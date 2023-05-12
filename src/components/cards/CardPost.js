@@ -6,7 +6,7 @@ import CardComment from "./CardComment";
 export default function CardPost({ url_img, title, content, createdAt, post }) {
   return (
     <div>
-      <div className="lg:w-2/3 xl:w-full">
+      <div className=" xl:w-full">
         <motion.img
           src={url_img}
           alt={title}

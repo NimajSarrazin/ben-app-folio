@@ -8,7 +8,7 @@ export default function CardAsidePost() {
       initial={{ opacity: 0, y: 400 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.8 }}
-      className="w-full lg:w-2/5 xl:w-full pt-8 lg:pt-1 "
+      className="w-full pt-8 lg:pt-1 "
     >
       <form>
         <div className="flex items-center relative pb-10">
