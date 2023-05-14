@@ -39,9 +39,11 @@ export default function Navbar() {
       <div className="container flex justify-between">
         <div className="flex items-center justify-between h-20">
           <Link href="/">
-            <li className="font-black text-2xl">
-              <span className="text-[#ff5d56]">BS</span>| Folio
-            </li>
+            <ul className="list-none">
+              <li className="font-black text-2xl">
+                <span className="text-[#ff5d56]">BS</span>| Folio
+              </li>
+            </ul>
           </Link>
           <div className="-mr-2 flex md:hidden justify-between">
             <button

@@ -17,7 +17,9 @@ export default function CardNewsLetters() {
     <div className="bg-[#222] w-1/2 p-2 rounded-lg border border-black mx-auto">
       <div className="w-full flex justify-center text-white overflow-hidden">
         <Input
-          id="message"
+          id="email"
+          type="email"
+          name="email"
           className="overflow-hidden"
           color="error"
           size="xl"
@@ -25,7 +27,7 @@ export default function CardNewsLetters() {
           underlined
           clearable
           contentRightStyling={false}
-          placeholder="Type your message..."
+          placeholder="Type your email"
           contentRight={<SendIcon color="red" onClick={openModal} />}
         />
       </div>

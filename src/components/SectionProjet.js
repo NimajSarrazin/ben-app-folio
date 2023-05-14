@@ -5,7 +5,7 @@ import Menu from "./cards/projet/Menu";
 import { motion } from "framer-motion";
 
 export default function SectionProjet({ posts }) {
-  console.log(posts);
+  // console.log(posts);
   const [cardCount, setCardCount] = useState([]);
   return (
     <section className="bg-[#151515]  " id="projet">

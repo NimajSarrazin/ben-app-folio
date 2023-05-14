@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
         <div className="border-2 border-[#333] w-40 mx-auto mb-10"></div>
         <p className="text-md text-center text-[#707070]">
-          Copyright &#169;2023 All rights reserved | This design is made with by
+          Copyright &#169;2023 All rights reserved | This design is made by
           Sarrazin Benjamin ♥︎
         </p>
       </div>
