@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="bg-[#111] text-white py-20">
-      <div className="container">
+      <div className="container pt-10">
         <div className="text-center text-3xl">
           <span className="text-[#ff5d56]">BS</span>| Folio
         </div>

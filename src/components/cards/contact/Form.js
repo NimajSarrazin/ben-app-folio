@@ -1,16 +1,19 @@
 import { Input, Textarea } from "@nextui-org/react";
 import React, { useState } from "react";
+import CardServices from "../CardServices";
+import CardContact from "../CardContact";
 
 export default function Form() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject:"",
     message: "",
   });
-
+// utilisation d'un hook state qui représnete le succès du formulaire
   const [formSuccess, setFormSuccess] = useState(false);
   const [formSuccessMessage, setFormSuccessMessage] = useState("");
-
+// ajout d'un event
   const handleInput = (e) => {
     const fieldName = e.target.name;
     const fieldValue = e.target.value;
@@ -22,7 +25,7 @@ export default function Form() {
   };
 
   const submitForm = (e) => {
-    // We don't want the page to refresh
+    //  à la soumission du formulaire la page ne dois pas refresh
     e.preventDefault();
 
     const formURL = e.target.action;
@@ -46,6 +49,7 @@ export default function Form() {
         setFormData({
           name: "",
           email: "",
+          subject: "",
           message: "",
         });
 
@@ -63,6 +67,7 @@ export default function Form() {
             <div className="flex mb-10 gap-5 md:gap-10">
               <div className="w-full text-white overflow-hidden border border-black">
                 <Input
+                  name="name"
                   id="name"
                   type="name"
                   className="overflow-hidden"
@@ -80,6 +85,7 @@ export default function Form() {
               </div>
               <div className="w-full text-white overflow-hidden border border-black">
                 <Input
+                  name="email"
                   id="email"
                   type="email"
                   color="error"
@@ -136,6 +142,7 @@ export default function Form() {
             </div>
           </form>
         )}
+        <CardContact/>
       </div>
     </section>
   );
