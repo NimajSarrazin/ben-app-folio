@@ -20,8 +20,9 @@ export default function CardPost({ url_img, title, content, createdAt, post }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5 }}
         >
-          <p className="text-xl text-center text-gray-300 pb-5">{createdAt}</p>
+          <p className="text-xl text-center text-gray-950 pb-5">{createdAt}</p>
           <h2 className="text-2xl font-semibold text-gray-700 pb-4">{title}</h2>
+          <div className="pb-10">{documentToReactComponents(content)}</div>
           <div className="pb-10">{documentToReactComponents(content)}</div>
           {/* <CardComment /> */}
         </motion.div>

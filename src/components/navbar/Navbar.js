@@ -36,7 +36,7 @@ export default function Navbar() {
         scrolled ? "floating" : navStyleScrolling
       }`}
     >
-      <div className="container flex justify-between ">
+      <div className="container flex justify-between">
         <div className="flex items-center justify-between h-20">
           <Link href="/">
             <li className="font-black text-2xl">
@@ -80,8 +80,7 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-
-        <ul className="flex items-center justify-between">
+        <ul className="flex items-center justify-between uppercase">
           <div className="hidden md:block">
             <div className="ml-10 flex gap-5">
               <Link href="/" onClick={handleLinkClick}>
