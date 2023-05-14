@@ -33,7 +33,7 @@ export default function CardServices() {
         <InView triggerOnce key={index}>
           {({ inView, ref }) => (
             <motion.div
-              variants={itemVariants}
+              variants={itemVariants }
               className="max-w-sm p-6 bg-[#222] border border-gray-200 rounded-lg shadow dark:border-[#333] text-center lg:p-10 xl:max-w-md relative group overflow-hidden"
               ref={ref}
               initial={{ y: 0, opacity: 0 }}

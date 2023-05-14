@@ -134,7 +134,7 @@ export default function Form() {
             </div>
             <div className="text-center pt-10 text-2xl">
               <button
-                className="shine-button bg-transparent hover:bg-[#ff5d56] text-[#ff5d56] transition-all duration-500 hover:text-white py-4 px-8 border border-[#ff5d56]"
+                className="shine-button bg-transparent hover:bg-[#ff5d56] text-[#ff5d56] transition-all duration-500 hover:text-white py-4 px-8 border border-[#ff5d56] my-10"
                 type="submit"
               >
                 Contact Now
