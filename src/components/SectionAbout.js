@@ -17,7 +17,7 @@ export default function SectionAbout() {
           <InView triggerOnce>
             {({ inView, ref }) => (
               <motion.img
-                src="/img/about.jpg"
+                src="/img/about.png"
                 alt=""
                 initial={{ opacity: 0, x: -400 }}
                 animate={
