@@ -12,7 +12,7 @@ export default function SectionResume() {
     <div className="bg-[#111]" id="resume">
       <div className="container">
         <TitleSection
-          title="My Resume"
+          title="Mon CV"
           description="Lorem ipsum dolor sit amet"
         />
         <div className="flex justify-center items-center">

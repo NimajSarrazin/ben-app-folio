@@ -22,8 +22,7 @@ export const Dataservices = [
         <path d="M19 10H15V14H19V10Z" fill="currentColor"></path>
       </svg>
     ),
-    content:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus assumenda voluptas ",
+    content: " Design web percutant en tant que UI/UX ",
   },
   {
     title: "Web developer",
@@ -40,7 +39,7 @@ export const Dataservices = [
       </svg>
     ),
     content:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus assumenda voluptas ",
+      " Passionné, compétent et prêt à créer votre vision numérique. Développeur web junior à votre service. ",
   },
   {
     title: "Photography",
@@ -60,67 +59,67 @@ export const Dataservices = [
       </svg>
     ),
     content:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus assumenda voluptas ",
+      "Capturant l'essence dans chaque image, un créateur polyvalent pour vous.  ",
   },
-  {
-    title: "SEO Analyst",
-    icon: (
-      <svg
-        className="w-10 mx-auto text-[#ff5d56] lg:w-20 mb-2"
-        stroke="currentColor"
-        fill="currentColor"
-        strokeWidth="0"
-        viewBox="0 0 16 16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M0 0h1v16H0V0zm1 15h15v1H1v-1z"></path>
-        <path
-          fillRule="evenodd"
-          d="M14.39 4.312L10.041 9.75 7 6.707l-3.646 3.647-.708-.708L7 5.293 9.959 8.25l3.65-4.563.781.624z"
-          clipRule="evenodd"
-        ></path>
-        <path
-          fillRule="evenodd"
-          d="M10 3.5a.5.5 0 01.5-.5h4a.5.5 0 01.5.5v4a.5.5 0 01-1 0V4h-3.5a.5.5 0 01-.5-.5z"
-          clipRule="evenodd"
-        ></path>
-      </svg>
-    ),
-    content:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus assumenda voluptas ",
-  },
-  {
-    title: "Creative Design",
-    icon: (
-      <svg
-        className="w-10 mx-auto text-[#ff5d56] lg:w-20 mb-2"
-        stroke="currentColor"
-        fill="currentColor"
-        strokeWidth="0"
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M256.883 29.7L241.11 51.554l-23-14.06-6.202 26.224-26.63-4.193 4.308 26.604-26.21 6.317 14.165 22.93-21.794 15.86L177.61 147l-14.065 22.992 26.234 6.2-4.194 26.624 26.613-4.308 6.316 26.2 22.937-14.16 15.865 21.788 15.772-21.856 23 14.06 4.283-18.11 1.92-8.116 26.633 4.194-4.31-26.606 26.21-6.314-14.166-22.928 21.797-15.86-21.863-15.767 14.064-22.992-26.234-6.2 4.19-26.624-26.61 4.307-6.318-26.2-22.936 14.16-15.867-21.788zm-.252 51.68a49.657 49.64 0 0 1 49.657 49.64 49.657 49.64 0 0 1-49.656 49.638 49.657 49.64 0 0 1-49.655-49.638 49.657 49.64 0 0 1 49.656-49.64zm59.345 137.308l-8.082 34.164-29.96-18.315-9.747 13.504c11.734 82.04 18.1 163.835 54.654 247l16.553-66.185c10.51 13.815 27.52 26.056 49.656 33.092-31.075-77.557-42.77-158.987-54.714-240.37l-18.36-2.89zm-117.37.253l-19.76 3.2c-11.916 81.194-23.63 162.428-54.632 239.807 22.136-7.036 39.147-19.277 49.658-33.092l16.552 66.186c36.794-83.71 43.005-166.034 54.89-248.614l-8.595-11.8-29.88 18.442-8.232-34.127z"></path>
-      </svg>
-    ),
-    content:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus assumenda voluptas ",
-  },
-  {
-    title: "27/7 Support",
-    icon: (
-      <svg
-        className="w-10 mx-auto text-[#ff5d56] lg:w-20 mb-2"
-        stroke="currentColor"
-        fill="currentColor"
-        strokeWidth="0"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M12,2C6.486,2,2,6.486,2,12v0.714V16v0.143C2,17.167,2.897,18,4,18h1c0.553,0,1-0.448,1-1v-5.143c0-0.552-0.447-1-1-1 H4.092C4.648,6.987,7.978,4,12,4s7.352,2.987,7.908,6.857H19c-0.553,0-1,0.448-1,1V16v1v1c0,1.103-0.897,2-2,2h-2v-1h-4v3h2h2h2 c2.206,0,4-1.794,4-4c1.103,0,2-0.833,2-1.857V16v-3.286V12C22,6.486,17.514,2,12,2z"></path>
-      </svg>
-    ),
-    content:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus assumenda voluptas ",
-  },
+  // {
+  //   title: "SEO Analyst",
+  //   icon: (
+  //     <svg
+  //       className="w-10 mx-auto text-[#ff5d56] lg:w-20 mb-2"
+  //       stroke="currentColor"
+  //       fill="currentColor"
+  //       strokeWidth="0"
+  //       viewBox="0 0 16 16"
+  //       xmlns="http://www.w3.org/2000/svg"
+  //     >
+  //       <path d="M0 0h1v16H0V0zm1 15h15v1H1v-1z"></path>
+  //       <path
+  //         fillRule="evenodd"
+  //         d="M14.39 4.312L10.041 9.75 7 6.707l-3.646 3.647-.708-.708L7 5.293 9.959 8.25l3.65-4.563.781.624z"
+  //         clipRule="evenodd"
+  //       ></path>
+  //       <path
+  //         fillRule="evenodd"
+  //         d="M10 3.5a.5.5 0 01.5-.5h4a.5.5 0 01.5.5v4a.5.5 0 01-1 0V4h-3.5a.5.5 0 01-.5-.5z"
+  //         clipRule="evenodd"
+  //       ></path>
+  //     </svg>
+  //   ),
+  //   content:
+  //     " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus assumenda voluptas ",
+  // },
+  // {
+  //   title: "Creative Design",
+  //   icon: (
+  //     <svg
+  //       className="w-10 mx-auto text-[#ff5d56] lg:w-20 mb-2"
+  //       stroke="currentColor"
+  //       fill="currentColor"
+  //       strokeWidth="0"
+  //       viewBox="0 0 512 512"
+  //       xmlns="http://www.w3.org/2000/svg"
+  //     >
+  //       <path d="M256.883 29.7L241.11 51.554l-23-14.06-6.202 26.224-26.63-4.193 4.308 26.604-26.21 6.317 14.165 22.93-21.794 15.86L177.61 147l-14.065 22.992 26.234 6.2-4.194 26.624 26.613-4.308 6.316 26.2 22.937-14.16 15.865 21.788 15.772-21.856 23 14.06 4.283-18.11 1.92-8.116 26.633 4.194-4.31-26.606 26.21-6.314-14.166-22.928 21.797-15.86-21.863-15.767 14.064-22.992-26.234-6.2 4.19-26.624-26.61 4.307-6.318-26.2-22.936 14.16-15.867-21.788zm-.252 51.68a49.657 49.64 0 0 1 49.657 49.64 49.657 49.64 0 0 1-49.656 49.638 49.657 49.64 0 0 1-49.655-49.638 49.657 49.64 0 0 1 49.656-49.64zm59.345 137.308l-8.082 34.164-29.96-18.315-9.747 13.504c11.734 82.04 18.1 163.835 54.654 247l16.553-66.185c10.51 13.815 27.52 26.056 49.656 33.092-31.075-77.557-42.77-158.987-54.714-240.37l-18.36-2.89zm-117.37.253l-19.76 3.2c-11.916 81.194-23.63 162.428-54.632 239.807 22.136-7.036 39.147-19.277 49.658-33.092l16.552 66.186c36.794-83.71 43.005-166.034 54.89-248.614l-8.595-11.8-29.88 18.442-8.232-34.127z"></path>
+  //     </svg>
+  //   ),
+  //   content:
+  //     " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus assumenda voluptas ",
+  // },
+  // {
+  //   title: "27/7 Support",
+  //   icon: (
+  //     <svg
+  //       className="w-10 mx-auto text-[#ff5d56] lg:w-20 mb-2"
+  //       stroke="currentColor"
+  //       fill="currentColor"
+  //       strokeWidth="0"
+  //       viewBox="0 0 24 24"
+  //       xmlns="http://www.w3.org/2000/svg"
+  //     >
+  //       <path d="M12,2C6.486,2,2,6.486,2,12v0.714V16v0.143C2,17.167,2.897,18,4,18h1c0.553,0,1-0.448,1-1v-5.143c0-0.552-0.447-1-1-1 H4.092C4.648,6.987,7.978,4,12,4s7.352,2.987,7.908,6.857H19c-0.553,0-1,0.448-1,1V16v1v1c0,1.103-0.897,2-2,2h-2v-1h-4v3h2h2h2 c2.206,0,4-1.794,4-4c1.103,0,2-0.833,2-1.857V16v-3.286V12C22,6.486,17.514,2,12,2z"></path>
+  //     </svg>
+  //   ),
+  //   content:
+  //     " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus assumenda voluptas ",
+  // },
 ];

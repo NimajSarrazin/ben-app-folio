@@ -4,12 +4,12 @@ import CardServices from './cards/CardServices'
 
 export default function SectionServices() {
   return (
-    <div className="bg-[#151515]" id='services'>
+    <div className="bg-[#151515]" id="services">
       <TitleSection
-        title="My services"
-        description="Lorem ipsum dolo sit amet"
+        title="Mes services"
+        description="Conception de sites web attrayants et fonctionnels pour votre présence en ligne"
       />
-      <div className='container'>
+      <div className="container">
         <CardServices />
       </div>
     </div>

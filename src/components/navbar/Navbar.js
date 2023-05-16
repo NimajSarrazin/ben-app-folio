@@ -13,7 +13,9 @@ export default function Navbar() {
     <div className="w-full h-20 sticky top-0 z-50 bg-black mx-auto flex justify-between items-center">
       <div className="container flex justify-between">
         <div className="text-white text-2xl items-center">
+          <Link href='/'>
           <span className="text-[#ff5d56]">BS</span>| Folio
+          </Link>
         </div>
         <div className="">
           <ul className="hidden lg:inline-flex items-center gap-6 lg:gap-10">

@@ -34,9 +34,7 @@ export default function Hero() {
               <span className="multiple-text text-xl md:text-4xl lg:text-6xl"></span>
             </h1>
             <p className="max-w-sm font-light text-[#707070] mb-5 md:mt-5 md:max-w-md lg:my-4 lg:text-xl">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industy. Lorem ipsum has been the industrys standar dummy text
-              ever
+              Développeur Web & Mobile (junior).
             </p>
 
             <Link href="https://drive.google.com/uc?export=download&id=1cNbyPZ46zhctKFI5prFgutdswgubinxt">

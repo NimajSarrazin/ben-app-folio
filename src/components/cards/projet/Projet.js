@@ -13,11 +13,11 @@ export default function Projet({
     <Link href={`post/${slug}`}>
       <div>
         <div className="">
-          <div className="relative">
+          <div className="relative ">
             <img
               src={img}
               alt={title}
-              className="object-cover w-full h-40 sm:h-56 md:h-64  cursor-pointer"
+              className="object-cover w-full h-40 sm:h-56 md:h-64 cursor-pointer "
             />
             <div className="absolute bottom-0 left-3 group-hover:block"></div>
           </div>

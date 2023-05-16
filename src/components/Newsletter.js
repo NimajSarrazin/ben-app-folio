@@ -9,8 +9,8 @@ export default function Newsletter() {
     <div className="bg-[#111]">
       <div className="container">
         <TitleSection
-          title="Sig up for Newsletter"
-          description="Join our subscribers list to get the latest news updates and special offers."
+          title="S'inscrire à la  Newsletter"
+          description="- Pour restez informé inscrivez-vous à notre newsletter dès maintenant -"
         />
         <div className="pb-24">
           <CardNewsLetters />

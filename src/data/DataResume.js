@@ -1,33 +1,33 @@
 // data resume
 
 export const experienceItems = [
-  {
-    year: "2017",
-    years: "2019",
-    job: "UX/UI Developer-Theme",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-  },
-  {
-    year: "2019",
-    years: "2020",
-    job: "Job 2",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-  },
-  {
-    year: "2020",
-    years: "2022",
-    job: "Job 3",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-  },
+
   {
     year: "2022",
-    years: "2023",
-    job: "Formation : Web Developper",
+    years: "2022",
+    job: "Garage Lemercier",
+    content:
+      "Organiser le stationnement des véhicules dans le parking de l'établiseement et y garer les véhicules des clients. ",
+  },
+  {
+    year: "2018",
+    years: "2018",
+    job: "Opérateur sur machine numérique",
+    content:
+      "Réalisation de pièce, Contrôler un produit fini, Utilisation d'un centre d'usinage 3 axes",
+  },
+  {
+    year: "2016",
+    years: "2017",
+    job: "Stagiaire AJC Prestation",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+  },
+  {
+    year: "2016",
+    years: "2016",
+    job: "Stagiaire à Vattenfall en Allemagne",
+    content: "Utilisation de machine conventionnelle (MO), Appris la culture allemande",
   },
 ];
 
@@ -51,18 +51,25 @@ export const iconsSvg = [
 
 export const educationItems = [
   {
-    year: "2015",
-    years: "2016",
-    job: "BEP / Mobilité",
+    year: "2022",
+    years: "2023",
+    job: "Formation : Développeur Web & Mobile",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "Formation complète en développement web et mobile, couvrant HTML, CSS, JavaScript, frameworks. ",
   },
   {
-    year: "2014",
+    year: "2016",
     years: "2017",
-    job: "Back Pro Technicien d'usinage",
+    job: "Back Pro Technicien D'usinage(obtenu)",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "Utilisation de machine numérique, Fraiseuse(3axe) et Tour numérique(2axes)",
+  },
+  {
+    year: "2015",
+    years: "2016",
+    job: "BEP Mécanique / Mobilité (obtenu)",
+    content:
+      "Utilisation de machine numérique, Fraiseuse(3axe) et Tour numérique(2axes).",
   },
 ];
 

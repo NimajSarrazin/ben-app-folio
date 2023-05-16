@@ -12,12 +12,12 @@ export default function SectionProjet({ posts }) {
       <div className="">
         <TitleSection
           title="Projet"
-          description="See my Works - Lorem ipsum dolor"
+          description="- Mes travaux -"
         />
       </div>
       <div className="container">
         <Menu setCardCount={setCardCount} />
-        <div className=" pb-24 grid md:gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+        <div className=" pb-24 grid gap-5  md:gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
           {cardCount === Infinity
             ? posts.map((post) => (
                 <div
@@ -25,7 +25,7 @@ export default function SectionProjet({ posts }) {
                   className={
                     post.fields.slug === "Mode"
                       ? "md:hidden xl:hidden lg:block"
-                      : ""
+                      : "p-5 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 border border-[#707070]"
                   }
                 >
                   <Projet
@@ -42,14 +42,14 @@ export default function SectionProjet({ posts }) {
                   className={
                     post.fields.slug === "Mode"
                       ? "md:hidden xl:hidden lg:block"
-                      : ""
+                      : "p-5 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 border border-[#707070]"
                   }
                 >
                   <Projet
                     key={post.sys.id}
                     slug={post.fields.slug}
                     img={post.fields.featureImage.fields.file.url}
-                    createdAT={post.fields.createdAt}
+                    // createdAT={post.fields.createdAt}
                   />
                 </div>
               ))}
