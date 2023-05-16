@@ -21,7 +21,7 @@ export default function CardSkills() {
   return (
     <section className="">
       <div>
-        <TiltleSvg title="My Skills" />
+        <TiltleSvg title="Compétence" />
       </div>
       <div className="flex justify-between mb-7 w-full lg:text-xl">
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-20 p-6">

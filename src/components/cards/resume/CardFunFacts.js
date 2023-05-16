@@ -4,16 +4,16 @@ import { GiCharacter } from "react-icons/gi";
 
 export default function CardFunFacts() {
   const funFactsData = [
-    { label: "Happy Clients", value: 0 },
-    { label: "Awards Achieved", value: 0 },
-    { label: "Projects Done", value: 5 },
-    { label: "User Ratings", value: 48 },
+    { label: "Client content", value: 0 },
+    { label: "Récompenses", value: 0 },
+    { label: "Travaux fini", value: 9 },
+    { label: "Note", value: 0 },
   ];
 
   return (
     <section>
       <div>
-        <TiltleSvg title="Fun Facts" />
+        <TiltleSvg title="Fun Fact" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  lg:gap-10">
         {funFactsData.map((fact, index) => (

@@ -13,7 +13,7 @@ export default function SectionResume() {
       <div className="container">
         <TitleSection
           title="Mon CV"
-          description="Lorem ipsum dolor sit amet"
+          description="Curriculum Vitae"
         />
         <div className="flex justify-center items-center">
           <div className="container w-full py-10 grid grid-cols-1 gap-10 md:grid-cols-2">
@@ -23,7 +23,7 @@ export default function SectionResume() {
               <CardSkills />
             </div>
             <div>
-              <TiltleSvg title="education" />
+              <TiltleSvg title="Formation" />
               <CardSwiper title="Education" data={educationItems} />
               <CardFunFacts />
             </div>

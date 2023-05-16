@@ -19,12 +19,10 @@ export default function Navbar() {
         </div>
         <div className="">
           <ul className="hidden lg:inline-flex items-center gap-6 lg:gap-10">
-            {dataNavLinks.map(({id, title, link}) => (
+            {dataNavLinks.map(({ id, title, link }) => (
               <li
                 className={`text-base uppercase font-normal text-white tracking-wide cursor-pointer  duration-300 ${
-                  router.pathname === link
-                    ? "active"
-                    : "hover:text-red-900"
+                  router.pathname === link ? "active" : "hover:text-red-900"
                 }`}
                 key={id}
               >
