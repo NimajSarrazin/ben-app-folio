@@ -1,19 +1,19 @@
 import Hero from "@/layout/Hero";
 import Layout from "@/layout/Layout";
 import { createClient } from "contentful";
-import About from "./about";
 import SectionServices from "@/components/SectionServices";
 import SectionResume from "@/components/SectionResume";
 import SectionProjet from "@/components/SectionProjet";
 import Newsletter from "@/components/Newsletter";
 import SectionContact from "@/components/SectionContact";
+import SectionAbout from "../components/SectionAbout";
 
 export default function Home({ posts, dataNextjs }) {
   return (
     <Layout>
       <div className="">
         <Hero />
-        <About />
+        <SectionAbout />
         <SectionServices />
         <SectionResume />
         <SectionProjet posts={posts} />

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -17,7 +18,7 @@ export default function Footer() {
           <div className="flex space-x-2 text-xl justify-center mb-10">
             <div>
               <svg
-                className="bg-[#151515] border-[#222] border  rounded-full p-3"
+                className="bg-[#151515] border-[#222] border  rounded-full p-3 hover:bg-black hover:text-white cursor-pointer"
                 stroke="currentColor"
                 fill="currentColor"
                 strokeWidth="0"
@@ -30,25 +31,27 @@ export default function Footer() {
               </svg>
             </div>
             <div className="">
-              <svg
-                className="bg-[#151515] border-[#222] border  rounded-full p-3"
-                stroke="currentColor"
-                fill="currentColor"
-                strokeWidth="0"
-                viewBox="0 0 24 24"
-                height="50px"
-                width="50px"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"></path>
-                </g>
-              </svg>
+              <Link href="https://www.facebook.com/benjamin.sarrazin.355/">
+                <svg
+                  className="bg-[#151515] border-[#222] border rounded-full p-3 cursor-pointer hover:bg-black hover:text-white"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  height="50px"
+                  width="50px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"></path>
+                  </g>
+                </svg>
+              </Link>
             </div>
             <div>
               <svg
-                className="bg-[#151515] border-[#222] border  rounded-full p-3"
+                className="bg-[#151515] border-[#222] border rounded-full p-3 cursor-pointer hover:bg-black hover:text-white"
                 stroke="currentColor"
                 fill="currentColor"
                 strokeWidth="0"
@@ -71,4 +74,3 @@ export default function Footer() {
     </footer>
   );
 }
-     

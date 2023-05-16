@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import { InView } from "react-intersection-observer";
 
-
 export default function CardContact() {
   const containerVariants = {
     hidden: { opacity: 1, scale: 0 },
@@ -16,13 +15,10 @@ export default function CardContact() {
       },
     },
   };
-
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: { y: 0, opacity: 1 },
   };
-
-  //ajout d'un filter pour filtré la data 
 
   return (
     <motion.div

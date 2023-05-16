@@ -68,7 +68,7 @@ export default function Index({ post }) {
         <div className="container flex pb-20">
           {projetImg.map((image, index) => (
             <img
-              className="overflow-hidden h-auto w-24 md:w-1/3   cursor-pointer"
+              className="overflow-hidden h-auto w-24 md:w-1/3 cursor-pointer"
               key={index}
               src={image.fields.file.url}
               alt={image.fields.title}

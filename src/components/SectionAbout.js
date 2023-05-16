@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 
-export default function About() {
+export default function SectionAbout() {
   return (
     <div className="bg-[#111] py-20" id="about">
       <div className="container">
