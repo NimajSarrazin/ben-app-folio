@@ -14,6 +14,7 @@
 
 .container {
   width: 100%;
+  max-width: 1280px; 
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -21,10 +22,12 @@
 
 }
 
+.active {
+  color: red;
+}
 
 
 /* section resume card befor */
-
 
 .experience-single {
     background: #222;
@@ -32,7 +35,6 @@
     margin-top: 30px;
     position: relative;
 }
-
 
 .experience-single:before {
     content: '';

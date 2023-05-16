@@ -1,159 +1,61 @@
+import { dataNavLinks } from "@/data/dataNavLinks";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { FiMenu } from "react-icons/fi";
+import { MdClose } from "react-icons/md";
 import React, { useEffect, useState } from "react";
 
 export default function Navbar() {
-  const [showModal, setShowModal] = useState(false);
-  const navStyleScrolling = "";
-
-  const handleClick = () => {
-    setShowModal(true);
-  };
-  const handleLinkClick = () => {
-    setShowModal(false);
-  };
-  // ajout d'un useState scrool pour afficher la navigation quand je scroll mais ne fonctionne pas..
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset;
-      if (scrollTop > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const [showMenu, setShowMenu] = useState(false);
+  const router = useRouter();
 
   return (
-    <div
-      className={`bg-black text-white list-none absolute top-0 left-0 right-0 z-20 ${
-        scrolled ? "floating" : navStyleScrolling
-      }`}
-    >
+    <div className="w-full h-20 sticky top-0 z-50 bg-black mx-auto flex justify-between items-center">
       <div className="container flex justify-between">
-        <div className="flex items-center justify-between h-20">
-          <Link href="/">
-            <ul className="list-none">
-              <li className="font-black text-2xl">
-                <span className="text-[#ff5d56]">BS</span>| Folio
-              </li>
-            </ul>
-          </Link>
-          <div className="-mr-2 flex md:hidden justify-between">
-            <button
-              onClick={handleClick}
-              type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
-              aria-label="Main menu"
-              aria-expanded="false"
-            >
-              <svg
-                className="block h-6 w-6"
-                stroke="currentColor"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-              <svg
-                className="hidden h-6 w-6"
-                stroke="currentColor"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
+        <div className="text-white text-2xl items-center">
+          <span className="text-[#ff5d56]">BS</span>| Folio
         </div>
-        <ul className="flex items-center justify-between uppercase">
-          <div className="hidden md:block">
-            <div className="ml-10 flex gap-5">
-              <Link href="/" onClick={handleLinkClick}>
-                <li className="hover:border-b-red-900 hover:border-b-4 hover:shadow-xl rounded-md text-sm font-medium">
-                  Home
-                </li>
-              </Link>
-              <Link href="#about" onClick={handleLinkClick}>
-                <li className="hover:border-b-red-900 hover:border-b-4  hover:shadow-xl  rounded-md text-sm font-medium">
-                  About
-                </li>
-              </Link>
-              <Link href="#projet" onClick={handleLinkClick}>
-                <li className="hover:border-b-red-900 hover:border-b-4  hover:shadow-xl rounded-md text-sm font-medium">
-                  Projet
-                </li>
-              </Link>
-              <Link href="#service">
-                <li className="hover:border-b-red-900 hover:border-b-4 hover:shadow-xl rounded-md text-sm font-medium">
-                  Service
-                </li>
-              </Link>
-              <Link href="#resume">
-                <li className="hover:border-b-red-900 hover:border-b-4 hover:shadow-xl rounded-md text-sm font-medium">
-                  Resume
-                </li>
-              </Link>
-              <Link href="#contact">
-                <li className="hover:border-b-red-900 hover:border-b-4 hover:shadow-xl rounded-md text-sm font-medium">
-                  Contact
-                </li>
-              </Link>
+        <div className="">
+          <ul className="hidden lg:inline-flex items-center gap-6 lg:gap-10">
+            {dataNavLinks.map(({ title, link }) => (
+              <li
+                className={`text-base uppercase font-normal text-white tracking-wide cursor-pointer  duration-300 ${
+                  router.pathname === link ? "active" : "hover:text-red-900"
+                }`}
+                key={title}
+              >
+                <Link href={link}>{title}</Link>
+              </li>
+            ))}
+          </ul>
+          <span
+            onClick={() => setShowMenu(!showMenu)}
+            className="text-xl md:block lg:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-white cursor-pointer"
+          >
+            <FiMenu />
+          </span>
+          {showMenu && (
+            <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-black p-4 scrollbar-hide">
+              <div className="flex flex-col gap-8 py-2 relative">
+                <div className="text-white text-xl">
+                  <span className="text-[#ff5d56]">BS</span>| Folio
+                </div>
+                <ul className="flex flex-col gap-4">
+                  {dataNavLinks.map((item)=> (
+                    <li key={item.id} className="text-base uppercase font-normal text-white tracking-wide cursor-pointer duration-300 hover:text-red-950">
+                      <Link href={item.link} onClick={() => setShowMenu(false)}>{item.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-col gap-4">
+                  <span onClick={() => setShowMenu(false)} className="absolute top-3 right-4 text-white duration-300 text-2xl cursor-pointer">
+                    <MdClose/>
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
-        </ul>
-      </div>
-      <div
-        className={`${
-          showModal ? "block" : "hidden"
-        } md:hidden bg-blackpx-2 pt-2 pb-3`}
-      >
-        <Link href="/">
-          <li className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-700">
-            Home
-          </li>
-        </Link>
-        <Link href="#about">
-          <li className="px-3 py-2 hover:bg-[#ff5d56] hover:shadow-xl  rounded-md text-sm font-medium">
-            About
-          </li>
-        </Link>
-        <Link href="#service">
-          <li className="px-3 py-2 hover:bg-[#ff5d56] hover:shadow-xl rounded-md text-sm font-medium">
-            Service
-          </li>
-        </Link>
-        <Link href="#resume">
-          <li className="px-3 py-2 hover:bg-[#ff5d56] hover:shadow-xl rounded-md text-sm font-medium">
-            Resume
-          </li>
-        </Link>
-        <Link href="#projet">
-          <li className="px-3 py-2 hover:bg-[#ff5d56] hover:shadow-xl rounded-md text-sm font-medium">
-            Projet
-          </li>
-        </Link>
-        <Link href="#contact">
-          <li className="px-3 py-2 hover:bg-[#ff5d56] hover:shadow-xl rounded-md text-sm font-medium">
-            Contact
-          </li>
-        </Link>
+          )}
+        </div>
       </div>
     </div>
   );

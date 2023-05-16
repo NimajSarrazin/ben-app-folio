@@ -12,7 +12,7 @@ export default function Projet({
   return (
     <Link href={`post/${slug}`}>
       <div>
-        <div className="py-10">
+        <div className="">
           <div className="relative">
             <img
               src={img}

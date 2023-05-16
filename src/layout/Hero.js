@@ -21,14 +21,14 @@ export default function Hero() {
     <div
       className="relative  bg-no-repeat bg-center bg-cover  bg-top-right h-[500px] md:h-[600px] xl:h-[800px]"
       style={{ backgroundImage: "url('/img/header-bg.jpg')" }}
+      id="home"
     >
       <div className="bg-overlay"></div>
       <div className="container">
         <div className="flex flex-wrap items-center mr-0 ml-0 h-[550px] md:h-[600px] xl:h-[800px]  ">
           <div className="relative z-10 pr-0 pl-0 w-full sm:w-1/2 md:w-2/3 xl:w-4/5">
-            <h2 className="text-sm sm:text-lg text-white md:text-md lg:text-4xl  mb-0 xl:my-4">
-              Hi There! <br />
-              I'm Benjamin Sarrazin
+            <h2 className="text-sm sm:text-lg text-white md:text-md lg:text-2xl  mb-0 xl:my-4">
+              Hey! <br />
             </h2>
             <h1 className=" ftn-size text-white font-bold  md:text-7xl lg:text-8xl xl:my-8">
               <span className="multiple-text text-xl md:text-4xl lg:text-6xl"></span>

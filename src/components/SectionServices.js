@@ -4,7 +4,7 @@ import CardServices from './cards/CardServices'
 
 export default function SectionServices() {
   return (
-    <div className="bg-[#151515]" id='service'>
+    <div className="bg-[#151515]" id='services'>
       <TitleSection
         title="My services"
         description="Lorem ipsum dolo sit amet"

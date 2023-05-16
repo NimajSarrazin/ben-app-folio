@@ -8,7 +8,7 @@ export default function SectionProjet({ posts }) {
   // console.log(posts);
   const [cardCount, setCardCount] = useState([]);
   return (
-    <section className="bg-[#151515]  " id="projet">
+    <section className="bg-[#151515] " id="projet">
       <div className="">
         <TitleSection
           title="Projet"
@@ -17,7 +17,7 @@ export default function SectionProjet({ posts }) {
       </div>
       <div className="container">
         <Menu setCardCount={setCardCount} />
-        <div className="py-10 grid md:gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className=" pb-24 grid md:gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
           {cardCount === Infinity
             ? posts.map((post) => (
                 <div
@@ -32,7 +32,7 @@ export default function SectionProjet({ posts }) {
                     key={post.sys.id}
                     slug={post.fields.slug}
                     img={post.fields.featureImage.fields.file.url}
-                    createdAT={post.fields.createdAt}
+                    // createdAT={post.fields.createdAt}
                   />
                 </div>
               ))
