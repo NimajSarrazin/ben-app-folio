@@ -4,7 +4,6 @@ import React from "react";
 import CardAsidePost from "@/components/cards/CardAsidePost";
 import CardPost from "@/components/cards/CardPost";
 
-
 // Connect to contentful
 const client = createClient({
   space: process.env.NEXT_PUBLIC_CONTENT_SPACE_ID,
@@ -75,7 +74,7 @@ export default function Index({ post }) {
             />
           ))}
         </div>
-        {/* <CardAsidePost /> */}
+        {/* <CardAsidePost post={post} /> */}
       </div>
     </Layout>
   );

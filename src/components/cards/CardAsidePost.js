@@ -1,10 +1,11 @@
 import React from "react";
+import CardPost from "./CardPost";
 
 
-export default function CardAsidePost() {
+export default function CardAsidePost({post}) {
   return (
     <div className="">
-      <div className="w-64 mt-52 border border-black rotate-90"></div>
+      <h4 className="">Les autres projet </h4>
     </div>
   );
 }
