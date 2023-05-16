@@ -9,7 +9,6 @@ import Newsletter from "@/components/Newsletter";
 import SectionContact from "@/components/SectionContact";
 
 export default function Home({ posts, dataNextjs }) {
-  console.log(posts);
   return (
     <Layout>
       <div className="">
@@ -37,7 +36,7 @@ export async function getStaticProps() {
     order: "sys.createdAt",
     limit: 9,
   });
-  
+
   const dataNextjs = await client.getEntries({
     content_type: "blogNextjs",
     order: "sys.createdAt",

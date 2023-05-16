@@ -5,7 +5,7 @@ export const dataNavLinks = [
     link: "#home",
   },
   {
-    _id: 2,
+    id: 2,
     title: "About",
     link: "#about",
   },

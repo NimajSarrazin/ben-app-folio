@@ -13,18 +13,20 @@ export default function Navbar() {
     <div className="w-full h-20 sticky top-0 z-50 bg-black mx-auto flex justify-between items-center">
       <div className="container flex justify-between">
         <div className="text-white text-2xl items-center">
-          <Link href='/'>
-          <span className="text-[#ff5d56]">BS</span>| Folio
+          <Link href="/">
+            <span className="text-[#ff5d56]">BS</span>| Folio
           </Link>
         </div>
         <div className="">
           <ul className="hidden lg:inline-flex items-center gap-6 lg:gap-10">
-            {dataNavLinks.map(({ title, link }) => (
+            {dataNavLinks.map(({id, title, link}) => (
               <li
                 className={`text-base uppercase font-normal text-white tracking-wide cursor-pointer  duration-300 ${
-                  router.pathname === link ? "active" : "hover:text-red-900"
+                  router.pathname === link
+                    ? "active"
+                    : "hover:text-red-900"
                 }`}
-                key={title}
+                key={id}
               >
                 <Link href={link}>{title}</Link>
               </li>
@@ -43,15 +45,23 @@ export default function Navbar() {
                   <span className="text-[#ff5d56]">BS</span>| Folio
                 </div>
                 <ul className="flex flex-col gap-4">
-                  {dataNavLinks.map((item)=> (
-                    <li key={item.id} className="text-base uppercase font-normal text-white tracking-wide cursor-pointer duration-300 hover:text-red-950">
-                      <Link href={item.link} onClick={() => setShowMenu(false)}>{item.title}</Link>
+                  {dataNavLinks.map((item) => (
+                    <li
+                      key={item.id}
+                      className="text-base uppercase font-normal text-white tracking-wide cursor-pointer duration-300 hover:text-red-950"
+                    >
+                      <Link href={item.link} onClick={() => setShowMenu(false)}>
+                        {item.title}
+                      </Link>
                     </li>
                   ))}
                 </ul>
                 <div className="flex flex-col gap-4">
-                  <span onClick={() => setShowMenu(false)} className="absolute top-3 right-4 text-white duration-300 text-2xl cursor-pointer">
-                    <MdClose/>
+                  <span
+                    onClick={() => setShowMenu(false)}
+                    className="absolute top-3 right-4 text-white duration-300 text-2xl cursor-pointer"
+                  >
+                    <MdClose />
                   </span>
                 </div>
               </div>
