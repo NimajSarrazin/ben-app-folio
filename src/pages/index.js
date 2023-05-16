@@ -9,6 +9,7 @@ import Newsletter from "@/components/Newsletter";
 import SectionContact from "@/components/SectionContact";
 
 export default function Home({ posts, dataNextjs }) {
+  console.log(posts);
   return (
     <Layout>
       <div className="">

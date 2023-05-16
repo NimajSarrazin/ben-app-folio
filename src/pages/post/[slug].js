@@ -60,6 +60,7 @@ export default function Index({ post }) {
           url_img={featureImage.fields.file.url}
           createdAt={createdAt}
         />
+        <div></div>
         {/* <CardAsidePost /> */}
       </div>
     </Layout>
