@@ -23,7 +23,7 @@ export default function Navbar() {
               <Link href={link} key={id}>
                 <li
                   className={`text-base uppercase font-normal text-white tracking-wide cursor-pointer  duration-300 ${
-                    router.asPath === link ? "active" : "hover:text-red-900"
+                    router.pathname === link ? "active" : "hover:text-red-900"
                   }`}
                   key={id}
                 >
@@ -34,7 +34,7 @@ export default function Navbar() {
           </ul>
           <span
             onClick={() => setShowMenu(!showMenu)}
-            className="text-xl md:block lg:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-white cursor-pointer"
+            className="text-xl md:block lg:hidden bg-black w-10 h-10 md:h-full inline-flex items-center justify-center rounded-full text-white cursor-pointer"
           >
             <FiMenu />
           </span>
