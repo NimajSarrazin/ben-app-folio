@@ -7,6 +7,8 @@ import SectionProjet from "@/components/SectionProjet";
 import Newsletter from "@/components/Newsletter";
 import SectionContact from "@/components/SectionContact";
 import SectionAbout from "../components/SectionAbout";
+import Carrousel from "@/components/Carrousel";
+import { Language } from "@/data/DataResume";
 
 export default function Home({ posts, dataNextjs }) {
   return (
@@ -14,8 +16,11 @@ export default function Home({ posts, dataNextjs }) {
       <div className="">
         <Hero />
         <SectionAbout />
-        <SectionServices />
+        <div className="bg-[#222] pb-24">
+          <Carrousel data={Language} />
+        </div>
         <SectionResume />
+        <SectionServices />
         <SectionProjet posts={posts} />
         <Newsletter />
         <SectionContact />

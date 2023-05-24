@@ -51,15 +51,21 @@ export default function Navbar() {
                   <span className="text-[#ff5d56]">BS</span>| Folio
                 </div>
                 <ul className="flex flex-col gap-4">
-                  {dataNavLinks.map((item) => (
-                    <li
-                      key={item.id}
-                      className="text-base uppercase font-normal text-white tracking-wide cursor-pointer duration-300 hover:text-red-950"
+                  {dataNavLinks.map(({ id, title, link }) => (
+                    <Link
+                      href={{
+                        pathname: "/",
+                        hash: link,
+                      }}
+                      onClick={() => setShowMenu(false)}
                     >
-                      <Link href={item.link} onClick={() => setShowMenu(false)}>
-                        {item.title}
-                      </Link>
-                    </li>
+                      <li
+                        key={id}
+                        className="text-base uppercase font-normal text-white tracking-wide cursor-pointer duration-300 hover:text-red-950"
+                      >
+                        {title}
+                      </li>
+                    </Link>
                   ))}
                 </ul>
                 <div className="flex flex-col gap-4">

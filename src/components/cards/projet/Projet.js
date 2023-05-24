@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-export default function Projet({
+export default function  Projet({
   img,
   title,
   extract,

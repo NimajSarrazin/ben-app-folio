@@ -9,7 +9,6 @@ export default function CardProjet() {
     { id: 5, label: "Php", color: "[#222]", textColor: "[#707070]" },
   ];
 
-
   return (
     <div className="w-full">
       <div className="mb-12">
