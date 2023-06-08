@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Rgpd from "./RGPD";
 
 export default function Footer() {
   return (
@@ -71,6 +72,7 @@ export default function Footer() {
           Sarrazin Benjamin ♥︎
         </p>
       </div>
+      <Rgpd />
     </footer>
   );
 }

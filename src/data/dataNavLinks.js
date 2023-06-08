@@ -1,12 +1,12 @@
 export const dataNavLinks = [
   {
     id: 1,
-    title: "Home",
+    title: "Accueil",
     link: "#home",
   },
   {
     id: 2,
-    title: "About",
+    title: "A propos",
     link: "#about",
   },
   {
@@ -16,12 +16,12 @@ export const dataNavLinks = [
   },
   {
     id: 4,
-    title: "Resume",
+    title: "CV",
     link: "#resume",
   },
   {
     id: 5,
-    title: "Projets",
+    title: "Projet",
     link: "#projet",
   },
   {

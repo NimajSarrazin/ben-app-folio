@@ -78,7 +78,7 @@ export default function Index({ post }) {
               onClick={() => setSelectedImage(image.fields.file.url)} // Mettre à jour l'image sélectionnée
             />
           ))}
-        </div>
+        </div> 
         {selectedImage && (
           <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-black">
             <button

@@ -2,50 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .font-berkshire {
-  font-family: 'Berkshire Swash', cursive;
+  font-family: "Berkshire Swash", cursive;
 }
 
-
-*{
+* {
   box-sizing: border-box;
 }
 
 .container {
   width: 100%;
-  max-width: 1280px; 
+  max-width: 1280px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .active {
   color: hsl(0, 100%, 50%);
 }
 
-
 /* section resume card befor */
 
 .experience-single {
-    background: #222;
-    padding: 40px 30px;
-    margin-top: 30px;
-    position: relative;
+  background: #222;
+  padding: 40px 30px;
+  margin-top: 30px;
+  position: relative;
 }
 
 .experience-single:before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    border-bottom: 30px solid #222;
-    border-right: 30px solid transparent;
-    position: absolute;
-    top: -30px;
-    left: 30px;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid #222;
+  border-right: 30px solid transparent;
+  position: absolute;
+  top: -30px;
+  left: 30px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -54,29 +50,34 @@
   }
 }
 
-
 .shine-button {
-    position: relative;
-    overflow: hidden;
-  }
+  position: relative;
+  overflow: hidden;
+}
 
-  .shine-button:before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-      to top right,
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0)
-    );
-    transform: rotate(-30deg);
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
+.shine-button:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  transform: rotate(-30deg);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
 
-  .shine-button:hover:before {
-    opacity: 1;
-  }
+.shine-button:hover:before {
+  opacity: 1;
+}
+
+.scrollable-menu {
+  scroll-behavior: smooth;
+  scroll-padding: 20px; /* Ajustez cette valeur en fonction de vos besoins */
+  overflow-y: scroll;
+}
